@@ -1,3 +1,9 @@
+#ifndef SERIALIZER_HPP
+#define SERIALIZER_HPP
+
+#include <stdint.h>
+#include "Data.hpp"
+
 class Serializer
 {
 public:
@@ -6,7 +12,9 @@ public:
 
 private:
     Serializer(void);
-    Serializer(Serializer const & src);
+    Serializer(Serializer const &src);
     ~Serializer();
-    Serializer & operator=(Serializer const & rhs);
+    Serializer & operator=(Serializer const &rhs);
 };
+
+#endif
